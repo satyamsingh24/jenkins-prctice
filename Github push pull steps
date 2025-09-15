@@ -1,0 +1,33 @@
+🔧 Push Local Project to GitHub (First Time)
+Go to project folder
+Initialize Git repo
+git init
+Add remote repo (replace with your GitHub link)
+git remote add origin https://github.com/missating/nodejs-todo.git
+Add files to staging area
+git add .
+Commit changes
+git commit -m "Initial commit - Node.js Todo App"
+Set branch name to main
+git branch -M main
+Push code to GitHub
+git push -u origin main
+
+🔧 If GitHub Repo Already Has Files (e.g. README.md)
+Pull remote files
+git pull origin main --allow-unrelated-histories
+Resolve conflicts (if any), then push again
+git push origin main
+
+🔧 Pull Latest Code (Local/Jenkins)
+If repo is already cloned
+git pull origin main
+If cloning for the first time
+git clone https://github.com/missating/nodejs-todo.git
+
+
+👉 Is file ko save karke repo me push kar do:
+
+git add GIT-STEPS.md
+git commit -m "Add Git workflow steps"
+git push origin main
